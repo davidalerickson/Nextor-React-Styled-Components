@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
+import { colors, bordshad } from '../../styles/mainStyles'
 
 
 const ContainerWrapper = styled.div`
-    max-width: ${props => props.maxWidth};
-    margin: ${props => props.marginTB} auto;
-    /* background-color: ${props => props.theme.colorPrimary}; */
-    background-color: var(--color-grey-light-1);
-    box-shadow: var(--shadow-dark);
-    min-height: 50rem;
-    @media only screen and (max-width: 900px) {
-    margin: 0;
-    max-width: 100%;
-    width: 100%;
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    & > * {
+        padding: 40px;
+        font-size: 3rem;
     }
 `;
 

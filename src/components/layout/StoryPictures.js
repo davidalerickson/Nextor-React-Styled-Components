@@ -2,20 +2,19 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { colors } from '../../styles/mainStyles'
 
-const SidebarWrapper = styled.div`
+const StoryPicturesWrapper = styled.div`
     background-color: ${colors.Primary};
-    grid-column: sidebar-start / sidebar-end;
-    grid-row: 1 / -1
+    grid-column: col-start 5 / full-end;
 `
 
-export class SideBar extends Component {
+export class StoryPictures extends Component {
     render() {
         return (
-            <SidebarWrapper>
+            <StoryPicturesWrapper>
                 {this.props.children}
-            </SidebarWrapper>
+            </StoryPicturesWrapper>
         )
     }
 }
 
-export default SideBar
+export default StoryPictures

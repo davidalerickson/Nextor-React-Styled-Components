@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { colors } from '../../styles/mainStyles'
 
-const HeaderWrapper = styled.header`
+const GalleryWrapper = styled.section`
     background-color: ${colors.GreyDark01};
-    grid-column: full-start / col-end 6;
+    grid-column: full-start / full-end;
 `
 
-export class Header extends Component {
+export class Gallery extends Component {
     render() {
         return (
-            <HeaderWrapper>
+            <GalleryWrapper>
                 {this.props.children}
-            </HeaderWrapper>
+            </GalleryWrapper>
         )
     }
 }
 
-export default Header
+export default Gallery
