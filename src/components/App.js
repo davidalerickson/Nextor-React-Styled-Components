@@ -37,7 +37,8 @@ const GlobalStyles = createGlobalStyle`
       font-weight: 300;
       color: ${colors.GreyDark02};
       line-height: 1.6;
-  } 
+  }
+
 `
 
 class App extends React.Component {
