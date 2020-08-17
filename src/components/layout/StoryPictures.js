@@ -4,7 +4,7 @@ import { colors } from '../../styles/mainStyles'
 
 const StoryPicturesWrapper = styled.div`
     background-color: ${colors.Primary};
-    grid-column: col-start 5 / full-end;
+    grid-column: full-start / col-end 4;
 `
 
 export class StoryPictures extends Component {

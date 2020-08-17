@@ -51,8 +51,8 @@ class App extends React.Component {
       <Header>Header</Header>
       <Realtors>Top 3 Realtors</Realtors>
       <Features>Features</Features>
-      <StoryContent>Story Content</StoryContent>
       <StoryPictures>Story Pictures</StoryPictures>
+      <StoryContent>Story Content</StoryContent>
       <Homes>Homes</Homes> 
       <Gallery>Gallery</Gallery>
       <Footer>Footer</Footer>
