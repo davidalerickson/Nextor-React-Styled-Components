@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import styled from 'styled-components'
-import { colors } from '../../styles/mainStyles'
+// import { colors } from '../../styles/mainStyles'
 
 import Feature from '../widgets/Feature'
 
@@ -12,7 +12,7 @@ const FeaturesWrapper = styled.div`
     display: grid;
     align-items: start;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 6rem;
+    grid-gap: 6re
 `
 
 

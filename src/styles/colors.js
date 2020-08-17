@@ -1,5 +1,6 @@
 export default {
     Primary: "#c69963",
+    PrimaryRGB: "198, 153, 99",
     PrimaryDark: "#B28451",
     Secondary: "#101d2c",
 
