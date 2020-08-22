@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { colors } from '../../styles/mainStyles'
+
 
 import HomeCard from '../widgets/HomeCard'
 

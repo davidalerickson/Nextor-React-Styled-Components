@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { colors } from '../../styles/mainStyles'
 
 import StoryPicture from '../widgets/StoryPicture'
 
