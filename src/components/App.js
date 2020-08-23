@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { colors, fonts } from '../styles/mainStyles'
+import { colors, fonts, breakpoints } from '../styles/mainStyles'
 import { createGlobalStyle } from 'styled-components';
 
 import Container from './layout/Container'
@@ -30,6 +30,9 @@ const GlobalStyles = createGlobalStyle`
   html {
       box-sizing: border-box;
       font-size: 62.5%; //1rem = 10px
+      @media only screen and (max-width: ${breakpoints.bp1250}){
+        font-size: 50%;
+      }
   }
 
   body {

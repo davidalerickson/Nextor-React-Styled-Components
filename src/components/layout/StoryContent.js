@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { colors, fonts } from '../../styles/mainStyles'
+import { colors, fonts, breakpoints } from '../../styles/mainStyles'
 
 const StoryContentWrapper = styled.div`
     background-color: ${colors.GreyLight01};
@@ -13,6 +13,9 @@ const StoryContentWrapper = styled.div`
     display: grid;
     align-content: center;
     justify-items: start;
+    @media only screen and (max-width: ${breakpoints.bp800}){
+        grid-column: 1 / -1;
+    }
 
     .heading-2{
         font-family: ${fonts.Display};

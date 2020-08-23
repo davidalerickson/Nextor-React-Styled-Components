@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { breakpoints } from '../../styles/mainStyles'
 
 const HamburgerMenuWrapper = styled.button`
     border: none;
@@ -9,6 +10,12 @@ const HamburgerMenuWrapper = styled.button`
     background-color: #fff;
     height: 2px;
     width: 4.5rem;
+    @media only screen and (max-width: ${breakpoints.bp1000}){
+        margin-top: 0;
+        margin-right: 3rem;
+        &::before{ transform: translateY(-1.2rem); }
+        &::after{ transform: translateY(1.1rem); }
+    }
 
     &::after,
     &::before{

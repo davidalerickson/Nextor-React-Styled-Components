@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { colors } from '../../styles/mainStyles'
+import { colors, breakpoints } from '../../styles/mainStyles'
 
 import HeaderContent from '../widgets/HeaderContent'
 
@@ -10,6 +10,9 @@ const HeaderWrapper = styled.header`
     background-image:  linear-gradient(rgba(${colors.SecondaryRGB}, 0.93), rgba(${colors.SecondaryRGB},0.93)), url(img/hero.jpeg);
     background-size: cover;
     background-position: center;
+    @media only screen and (max-width: ${breakpoints.bp800}){
+        grid-column: 1 / -1;
+      }
 
 `
 

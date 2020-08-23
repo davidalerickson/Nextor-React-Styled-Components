@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from '../../styles/mainStyles'
 
 const HeaderLogoWrapper = styled.div`
     justify-self: center;
@@ -13,6 +12,7 @@ const HeaderLogoWrapper = styled.div`
 const HeaderLogo = () => {
     return (
         <HeaderLogoWrapper>
+            {/* eslint-disable-next-line */}
             <img src="img/logo.png"></img>
         </HeaderLogoWrapper>
     )

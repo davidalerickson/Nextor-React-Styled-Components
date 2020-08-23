@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from '../../styles/mainStyles'
-
+import { breakpoints } from '../../styles/mainStyles'
 
 import HeaderLogo from './HeaderLogo'
 import HeaderBody from './HeaderBody'
@@ -14,8 +13,11 @@ const HeaderContentWrapper = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr 6rem;
     grid-row-gap: 1.5rem;
-    grid-template-columns: max-content;
+    grid-template-columns: minmax(min-content, max-content);
     justify-content:center;
+    @media only screen and (max-width: ${breakpoints.bpSmall}){
+            padding: 5rem;
+        }
 `
 
 function HeaderContent() {
